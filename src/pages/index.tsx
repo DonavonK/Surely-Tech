@@ -35,6 +35,21 @@ export default function Home() {
 
 
 
+
+{/* ctrl + c (copy)
+ctrl + x (cut)
+ctrl + v (paste) */}
+
+
+
+
+
+
+
+
+
+
+
 <button onClick={() => setButtonWasClicked(prevState => !prevState)}>
   Click me
 </button>
