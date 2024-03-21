@@ -4,14 +4,14 @@ import Link from "next/link";
 
 import { api } from "~/utils/api";
 // import styles from "./index.module.css";
-import styles from "~/styles/styles.module.css"
+import styles from "~/styles/styles.module.css";
 import { boolean } from "zod";
 import { useState } from "react";
 
-export default function Home() {
+export default function HomePage() {
   // const hello = api.post.hello.useQuery({ text: "from tRPC" });
 
-  // const [buttonWasClicked, setButtonWasClicked] = useState(false);
+  const [buttonWasClicked, setButtonWasClicked] = useState(false);
 
   return (
     <>
@@ -21,112 +21,37 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-
-
-{/* ===================================================== */}
-
-
-
-
-{/* HMaking a new comment */}
-
-
-
-{/* ===================================================== */}
-
-
-
-
+        
+        {/* ===================================================== */}
 
         <div className={styles.container}>
-          <h1 className={styles.title}>
-          Surely Tech
-          </h1>
+          <h1 className={styles.title}>Home Page</h1>
           <div className={styles.cardRow}>
 
-
-
-
-{/* = ======================================================= */}
-
-
-
-
-
-{/* ctrl + c (copy)
-ctrl + x (cut)
-ctrl + v (paste) */}
-
-
-
-
-
-
-
-
-
-
-
-{/* <button onClick={() => setButtonWasClicked(prevState => !prevState)}>
-  Click me
-</button> */}
-
-
-
-{/* 
-{buttonWasClicked == true ? (
-
-): <div></div>} */}
-
-
+{/* =============== */}
 
 
             <Link
               className={styles.card}
-              href="/homePage"
-              >
-
-
+              href=""
+            >
               <h3 className={styles.cardTitle}>First Steps →</h3>
 
-
-
-
+              <div className={styles.cardText}>
+                Just the basics - Everything you need to know to set up your
+                database and authentication.
+              </div>
             </Link>
 
-
-          
-
-
-            {/* = ======================================================= */}
-
-
-
+{/* =============== */}
 
           </div>
-         
         </div>
 
-        {/* ================================================================================================ */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <div className={styles.testDiv} />
 
         {/* ================================================================================================ */}
+
       </main>
     </>
   );
