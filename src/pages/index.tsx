@@ -16,6 +16,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+
+
+{/* ===================================================== */}
+
+
+
+
+{/* Hello Arno, how are you? */}
+
+
+
+{/* ===================================================== */}
+
+
+
+
+
         <div className={styles.container}>
           <h1 className={styles.title}>
             Create <span className={styles.pinkSpan}>T3</span> App
