@@ -21,47 +21,17 @@ export default function Arno() {
         <Link rel="icon" href="/favicon.ico" />
       </Head>
 
-      
-      
+      <div className={styles.navbar}>
+      </div>
+        
       <main className={styles.main}>
 
-              {/* ================== Nav Bar =================================== */}
-         {/* ===================================================== */}
-      
+
+
         <div className={styles.container}>
-          <h1 className={styles.title}>Home Page</h1>
-          <div className={styles.cardRow}>
-            {/* =============== */}
-
-            <ul>
-                              
-              <li>adasd</li>
-              <li>adasd</li>
-              <li>adasd</li>
-              <li>adasd</li>
-              <li>adasd</li>
-              <li>adasd</li>
-              <li>adasd</li>
-              <li>adasd</li>
-                              
-            </ul>
-
-            <Link className={styles.card} href="">
-              <h3 className={styles.cardTitle}>First Steps →</h3>
-
-              <div className={styles.cardText}>
-                Just the basics - Everything you need to know to set up your
-                database and authentication.
-              </div>
-            </Link>
-
-            {/* =============== */}
-          </div>
+          <h1 className={styles.title}>arno</h1>
+          <div className={styles.cardRow}></div>
         </div>
-
-        <div className={styles.testDiv} />
-
-        {/* ================================================================================================ */}
       </main>
     </>
   );
