@@ -191,7 +191,10 @@
     background-color: #065674;
     color:white;
     padding:lrem;
+    height: 80px;
+    width: 100%;
   }
+
   .logo a {
     color:white;
     text-decoration:none;
@@ -199,7 +202,3 @@
   }
 
   
-  /* <div className={styles.main}> */
-
-
-  /* =========================== Arno =============================== */
