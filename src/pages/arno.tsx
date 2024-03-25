@@ -8,7 +8,7 @@ import styles from "~/styles/styles.module.css";
 import { boolean } from "zod";
 import { useState } from "react";
 
-export default function HomePage() {
+export default function Arno() {
   // const hello = api.post.hello.useQuery({ text: "from tRPC" });
 
   const [buttonWasClicked, setButtonWasClicked] = useState(false);
@@ -21,12 +21,15 @@ export default function HomePage() {
         <Link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={styles.navbar}></div>
-
+      <div className={styles.navbar}>
+      </div>
+        
       <main className={styles.main}>
-        <div className={styles.container}>
-          <h1 className={styles.title}>Home Page</h1>
 
+
+
+        <div className={styles.container}>
+          <h1 className={styles.title}>arno</h1>
           <div className={styles.cardRow}></div>
         </div>
       </main>

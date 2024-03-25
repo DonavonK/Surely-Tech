@@ -12,9 +12,9 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: linear-gradient(to bottom, #2e026d, #15162c);
+    background-image: linear-gradient(to bottom, #020a2f, #00ff489f);
+    
   }
-  
   .container {
     width: 100%;
     display: flex;
@@ -172,7 +172,7 @@
   .submitButton {
     all: unset;
     border-radius: 9999px;
-    background-color: rgb(255 255 255 / 0.1);
+    background-color: rgba(255, 255, 255, 0.616);
     padding: 0.75rem 2.5rem;
     font-weight: 600;
     color: white;
@@ -184,8 +184,23 @@
     background-color: rgb(255 255 255 / 0.2);
   }
   
-  /* =========================== Arno =============================== */
+  .navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #06740f;
+    color:white;
+    padding:lrem;
+    height: 80px;
+    width: 100%;
+  }
 
+  .logo a {
+    color:white;
+    text-decoration:none;
 
+  }
+  
 
-  /* =========================== Arno =============================== */
+  
+  

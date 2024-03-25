@@ -1,17 +1,12 @@
-// import { signIn, signOut, useSession } from "next-auth/react";
+import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
 import Link from "next/link";
 
 import { api } from "~/utils/api";
-// import styles from "./index.module.css";
-import styles from "~/styles/styles.module.css"
-import { boolean } from "zod";
-import { useState } from "react";
+import styles from "./index.module.css";
 
 export default function Home() {
-  // const hello = api.post.hello.useQuery({ text: "from tRPC" });
-
-  // const [buttonWasClicked, setButtonWasClicked] = useState(false);
+  const hello = api.post.hello.useQuery({ text: "from tRPC" });
 
   return (
     <>
@@ -28,10 +23,10 @@ export default function Home() {
 
 
 
-{/* HMaking a new comment */}
+{/* Hello Arno, how are you? */}
 
 
-
+    
 {/* ===================================================== */}
 
 
@@ -40,54 +35,32 @@ export default function Home() {
 
         <div className={styles.container}>
           <h1 className={styles.title}>
-          Surely Tech
+            Create <span className={styles.pinkSpan}>T3</span> App
           </h1>
           <div className={styles.cardRow}>
-
-
-
-
-{/* = ======================================================= */}
-
-
-
-
-
-{/* ctrl + c (copy)
-ctrl + x (cut)
-ctrl + v (paste) */}
-
-
-
-
-
-
-
-
-
-
-
-{/* <button onClick={() => setButtonWasClicked(prevState => !prevState)}>
-  Click me
-</button> */}
-
-
-
-{/* 
-{buttonWasClicked == true ? (
-
-): <div></div>} */}
-
-
-
-
             <Link
               className={styles.card}
+
               href="/homePage"
               >
 
 
-              <h3 className={styles.cardTitle}>First Steps →</h3>
+              <h3 className={styles.cardTitle}>Donavon</h3>
+
+
+
+
+
+            </Link>
+        
+
+            <Link
+              className={styles.card}
+              href="/arno"
+              >
+
+
+              <h3 className={styles.cardTitle}>Arno →</h3>
 
 
 
@@ -101,38 +74,18 @@ ctrl + v (paste) */}
             {/* = ======================================================= */}
 
 
-
-
           </div>
-         
+          {/* <div className={styles.showcaseContainer}>
+            <p className={styles.showcaseText}>
+              {hello.data ? hello.data.greeting : "Loading tRPC query..."}
+            </p>
+            <AuthShowcase />
+          </div> */}
         </div>
-
-        {/* ================================================================================================ */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        {/* ================================================================================================ */}
       </main>
     </>
   );
 }
-
-// Please remove the below authentication code (Arno)
 
 // function AuthShowcase() {
 //   const { data: sessionData } = useSession();
