@@ -49,3 +49,18 @@ Do you have changes but need to pull code? Stash your changes, pull your code an
 - [ git stash ]()
 - [ git pull ]()
 - [ git stash pop ]()
+
+# npm run build
+
+Testing your build is always a good idea to ensure you only push functional code
+- [npm run build]()
+
+# Start Local Server (npm run dev)
+
+Spin up you local environment
+
+- [npm run dev]()
+
+Once you local server is running, you can open you localhost:3000 in a new chrome browser and start developing
+
+- [http://localhost:3000](http://localhost:3000)
