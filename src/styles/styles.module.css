@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: linear-gradient(to bottom, #2e026d, #15162c);
+    background-image: linear-gradient(to bottom, #020a2f, #00ff489f);
   }
   
   .container {
@@ -172,7 +172,7 @@
   .submitButton {
     all: unset;
     border-radius: 9999px;
-    background-color: rgb(255 255 255 / 0.1);
+    background-color: rgba(255, 255, 255, 0.616);
     padding: 0.75rem 2.5rem;
     font-weight: 600;
     color: white;
@@ -184,8 +184,27 @@
     background-color: rgb(255 255 255 / 0.2);
   }
   
+  .navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #065674;
+    color:white;
+    padding:lrem;
+  }
+  .logo a {
+    color:white;
+    text-decoration:none;
+
+  }
+
+  
+
+<<<<<<< Updated upstream
+  
+=======
+  /* <div className={styles.main}> */
+
+
   /* =========================== Arno =============================== */
-
-
-
-  /* =========================== Arno =============================== */
+>>>>>>> Stashed changes

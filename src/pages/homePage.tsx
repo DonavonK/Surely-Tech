@@ -1,10 +1,11 @@
 // import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
 import Link from "next/link";
-
+import navbar from "~/components/navbar";
 import { api } from "~/utils/api";
 // import styles from "./index.module.css";
 import styles from "~/styles/styles.module.css";
+
 import { boolean } from "zod";
 import { useState } from "react";
 
@@ -21,12 +22,12 @@ export default function HomePage() {
         <Link rel="icon" href="/favicon.ico" />
       </Head>
 
-
+      
+      <navbar/>include the navbar coponent
       <main className={styles.main}>
 
-      {/* ================== Nav Bar =================================== */}
-
-      {/* ===================================================== */}
+              {/* ================== Nav Bar =================================== */}
+         {/* ===================================================== */}
       
         <div className={styles.container}>
           <h1 className={styles.title}>Home Page</h1>
@@ -34,6 +35,7 @@ export default function HomePage() {
             {/* =============== */}
 
             <ul>
+                              
               <li>adasd</li>
               <li>adasd</li>
               <li>adasd</li>
@@ -42,6 +44,7 @@ export default function HomePage() {
               <li>adasd</li>
               <li>adasd</li>
               <li>adasd</li>
+                              
             </ul>
 
             <Link className={styles.card} href="">
