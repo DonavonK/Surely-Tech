@@ -48,7 +48,7 @@ After the changes has been added, commit your changes
 Push your changes to git hub
 - [ git push ]()
 
-## Git Stash
+# Git Stash
 
 Do you have changes but need to pull code? Stash your changes, pull your code and pop.
 
