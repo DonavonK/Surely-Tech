@@ -34,7 +34,7 @@ Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/ver
 
 Here lies the commands for local development
 
-### Git Commands
+# Git Commands
 
 Before any development starts, ensure that you have pulled the latest code from the git repositories
 - [ git pull ]()
