@@ -52,17 +52,7 @@ export default function Home() {
 
 
             </Link>
-            <Link
-              className={styles.card}
-              href="https://create.t3.gg/en/introduction"
-              target="_blank"
-            >
-              <h3 className={styles.cardTitle}>Documentation →</h3>
-              <div className={styles.cardText}>
-                Learn more about Create T3 App, the libraries it uses, and how
-                to deploy it.
-              </div>
-            </Link>
+        
 
             <Link
               className={styles.card}
@@ -85,12 +75,12 @@ export default function Home() {
 
 
           </div>
-          <div className={styles.showcaseContainer}>
+          {/* <div className={styles.showcaseContainer}>
             <p className={styles.showcaseText}>
               {hello.data ? hello.data.greeting : "Loading tRPC query..."}
             </p>
-            {/* <AuthShowcase /> */}
-          </div>
+            <AuthShowcase />
+          </div> */}
         </div>
       </main>
     </>

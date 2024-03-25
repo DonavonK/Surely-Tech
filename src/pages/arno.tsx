@@ -1,10 +1,10 @@
 // import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
 import Link from "next/link";
-
 import { api } from "~/utils/api";
 // import styles from "./index.module.css";
 import styles from "~/styles/styles.module.css";
+
 import { boolean } from "zod";
 import { useState } from "react";
 
@@ -21,12 +21,12 @@ export default function Arno() {
         <Link rel="icon" href="/favicon.ico" />
       </Head>
 
-
+      
+      
       <main className={styles.main}>
 
-      {/* ================== Nav Bar =================================== */}
-
-      {/* ===================================================== */}
+              {/* ================== Nav Bar =================================== */}
+         {/* ===================================================== */}
       
         <div className={styles.container}>
           <h1 className={styles.title}>Home Page</h1>
@@ -34,6 +34,7 @@ export default function Arno() {
             {/* =============== */}
 
             <ul>
+                              
               <li>adasd</li>
               <li>adasd</li>
               <li>adasd</li>
@@ -42,6 +43,7 @@ export default function Arno() {
               <li>adasd</li>
               <li>adasd</li>
               <li>adasd</li>
+                              
             </ul>
 
             <Link className={styles.card} href="">
