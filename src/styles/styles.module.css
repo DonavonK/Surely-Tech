@@ -13,8 +13,8 @@
     justify-content: center;
     min-height: 100vh;
     background-image: linear-gradient(to bottom, #020a2f, #00ff489f);
+    
   }
-  
   .container {
     width: 100%;
     display: flex;
@@ -188,7 +188,7 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #065674;
+    background-color: #06740f;
     color:white;
     padding:lrem;
     height: 80px;
@@ -200,5 +200,7 @@
     text-decoration:none;
 
   }
+  
 
+  
   
