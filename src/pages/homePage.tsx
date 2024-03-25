@@ -1,7 +1,6 @@
 // import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
 import Link from "next/link";
-import navbar from "~/components/navbar";
 import { api } from "~/utils/api";
 // import styles from "./index.module.css";
 import styles from "~/styles/styles.module.css";
@@ -23,7 +22,7 @@ export default function HomePage() {
       </Head>
 
       
-      <navbar/>include the navbar coponent
+      
       <main className={styles.main}>
 
               {/* ================== Nav Bar =================================== */}

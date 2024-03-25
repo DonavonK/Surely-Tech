@@ -40,7 +40,7 @@ export default function Home() {
           <div className={styles.cardRow}>
             <Link
               className={styles.card}
-<<<<<<< HEAD
+
               href="/homePage"
               >
 
@@ -50,16 +50,7 @@ export default function Home() {
 
 
 
-=======
-              href="https://create.t3.gg/en/usage/first-steps"
-              target="_blank"
-            >
-              <h3 className={styles.cardTitle}>First Steps →</h3>
-              <div className={styles.cardText}>
-                Just the basics - Everything you need to know to set up your
-                database and authentication.
-              </div>
->>>>>>> 4602a3f53e04e87e4a6e58c53324e2989028667e
+
             </Link>
             <Link
               className={styles.card}
@@ -72,7 +63,6 @@ export default function Home() {
                 to deploy it.
               </div>
             </Link>
-<<<<<<< Updated upstream
 
             <Link
               className={styles.card}
@@ -94,16 +84,12 @@ export default function Home() {
             {/* = ======================================================= */}
 
 
-
-
-=======
->>>>>>> Stashed changes
           </div>
           <div className={styles.showcaseContainer}>
             <p className={styles.showcaseText}>
               {hello.data ? hello.data.greeting : "Loading tRPC query..."}
             </p>
-            <AuthShowcase />
+            {/* <AuthShowcase /> */}
           </div>
         </div>
       </main>
@@ -111,26 +97,26 @@ export default function Home() {
   );
 }
 
-function AuthShowcase() {
-  const { data: sessionData } = useSession();
+// function AuthShowcase() {
+//   const { data: sessionData } = useSession();
 
-  const { data: secretMessage } = api.post.getSecretMessage.useQuery(
-    undefined, // no input
-    { enabled: sessionData?.user !== undefined }
-  );
+//   const { data: secretMessage } = api.post.getSecretMessage.useQuery(
+//     undefined, // no input
+//     { enabled: sessionData?.user !== undefined }
+//   );
 
-  return (
-    <div className={styles.authContainer}>
-      <p className={styles.showcaseText}>
-        {sessionData && <span>Logged in as {sessionData.user?.name}</span>}
-        {secretMessage && <span> - {secretMessage}</span>}
-      </p>
-      <button
-        className={styles.loginButton}
-        onClick={sessionData ? () => void signOut() : () => void signIn()}
-      >
-        {sessionData ? "Sign out" : "Sign in"}
-      </button>
-    </div>
-  );
-}
+//   return (
+//     <div className={styles.authContainer}>
+//       <p className={styles.showcaseText}>
+//         {sessionData && <span>Logged in as {sessionData.user?.name}</span>}
+//         {secretMessage && <span> - {secretMessage}</span>}
+//       </p>
+//       <button
+//         className={styles.loginButton}
+//         onClick={sessionData ? () => void signOut() : () => void signIn()}
+//       >
+//         {sessionData ? "Sign out" : "Sign in"}
+//       </button>
+//     </div>
+//   );
+// }
