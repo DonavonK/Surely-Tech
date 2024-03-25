@@ -1,206 +1,380 @@
-.testDiv {
-    background-color: red;
-    width: 150px;
-    height: 150px;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-    padding: 15px 15px 15px 15px;
+/* =========================== Typography =========================== */
+
+.h1 {
+  font-size: 38px;
+}
+
+.testDiv {
+  background-color: red;
+  width: 150px;
+  height: 150px;
+
+  padding: 15px 15px 15px 15px;
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-image: linear-gradient(to bottom, #020a2f, #00ff489f);
-    
-  }
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 4rem 1rem;
+}
+
+@media (min-width: 640px) {
   .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    padding: 4rem 1rem;
+    max-width: 640px;
   }
-  
-  @media (min-width: 640px) {
-    .container {
-      max-width: 640px;
-    }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
   }
-  
-  @media (min-width: 768px) {
-    .container {
-      max-width: 768px;
-    }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
   }
-  
-  @media (min-width: 1024px) {
-    .container {
-      max-width: 1024px;
-    }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
   }
-  
-  @media (min-width: 1280px) {
-    .container {
-      max-width: 1280px;
-    }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
   }
-  
-  @media (min-width: 1536px) {
-    .container {
-      max-width: 1536px;
-    }
-  }
-  
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin: 0;
+  color: white;
+}
+
+@media (min-width: 640px) {
   .title {
-    font-size: 3rem;
-    line-height: 1;
-    font-weight: 800;
-    letter-spacing: -0.025em;
-    margin: 0;
-    color: white;
+    font-size: 5rem;
   }
-  
-  @media (min-width: 640px) {
-    .title {
-      font-size: 5rem;
-    }
-  }
-  
-  .pinkSpan {
-    color: hsl(280 100% 70%);
-  }
-  
+}
+
+.pinkSpan {
+  color: hsl(280 100% 70%);
+}
+
+.cardRow {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
   .cardRow {
-    display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  
-  @media (min-width: 640px) {
-    .cardRow {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .cardRow {
-      gap: 2rem;
-    }
-  }
-  
-  .card {
-    max-width: 20rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-    border-radius: 0.75rem;
-    color: white;
-    background-color: rgb(255 255 255 / 0.1);
-  }
-  
-  .card:hover {
-    background-color: rgb(255 255 255 / 0.2);
-    transition: background-color 150ms cubic-bezier(0.5, 0, 0.2, 1);
-  }
-  
-  .cardTitle {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 700;
-    margin: 0;
-  }
-  
-  .cardText {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-  
-  .showcaseContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  .showcaseText {
-    color: white;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  
-  .authContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .loginButton {
-    border-radius: 9999px;
-    background-color: rgb(255 255 255 / 0.1);
-    padding: 0.75rem 2.5rem;
-    font-weight: 600;
-    color: white;
-    text-decoration-line: none;
-    transition: background-color 150ms cubic-bezier(0.5, 0, 0.2, 1);
-  }
-  
-  .loginButton:hover {
-    background-color: rgb(255 255 255 / 0.2);
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .input {
-    width: 100%;
-    border-radius: 9999px;
-    padding: 0.5rem 1rem;
-    color: black;
-  }
-  
-  .submitButton {
-    all: unset;
-    border-radius: 9999px;
-    background-color: rgba(255, 255, 255, 0.616);
-    padding: 0.75rem 2.5rem;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    transition: background-color 150ms cubic-bezier(0.5, 0, 0.2, 1);
-  }
-  
-  .submitButton:hover {
-    background-color: rgb(255 255 255 / 0.2);
-  }
-  
-  .navbar {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #06740f;
-    color:white;
-    padding:lrem;
-    height: 80px;
-    width: 100%;
-  }
+}
 
-  .logo a {
-    color:white;
-    text-decoration:none;
-
+@media (min-width: 768px) {
+  .cardRow {
+    gap: 2rem;
   }
-  
+}
 
-  
-  
+/* =========================== Card =========================== */
+
+/* styles.module.css */
+.card {
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.cardImage {
+  width: 300px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.cardText {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+/* =========================== Card Container =========================== */
+
+.cardSection {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.cardContainer > * {
+  position: absolute;
+  margin-top: -50px;
+}
+
+.cardContainer > *:nth-child(1) {
+  left: -150px;
+}
+
+.cardContainer > *:nth-child(2) {
+  left: 0;
+}
+
+.cardContainer > *:nth-child(3) {
+  right: -150px;
+}
+
+.showcaseContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.showcaseText {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.authContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.loginButton {
+  border-radius: 9999px;
+  background-color: rgb(255 255 255 / 0.1);
+  padding: 0.75rem 2.5rem;
+  font-weight: 600;
+  color: white;
+  text-decoration-line: none;
+  transition: background-color 150ms cubic-bezier(0.5, 0, 0.2, 1);
+}
+
+.loginButton:hover {
+  background-color: rgb(255 255 255 / 0.2);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input {
+  width: 100%;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  color: black;
+}
+
+.submitButton {
+  all: unset;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.616);
+  padding: 0.75rem 2.5rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  transition: background-color 150ms cubic-bezier(0.5, 0, 0.2, 1);
+}
+
+.submitButton:hover {
+  background-color: rgb(255 255 255 / 0.2);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #06740f;
+  color: white;
+  padding: lrem;
+  height: 80px;
+  width: 100%;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+/* =========================== Navbar =========================== */
+
+/* navbar.module.css */
+
+.navbar {
+  background-color: rgba(6, 86, 116, 0.5);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  margin-right: 80px;
+}
+
+.logo_home {
+  height: 150px;
+  height: 150px;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navItem {
+  margin-right: 20px;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.authButtons {
+  margin-left: auto;
+}
+
+.loginButton,
+.startButton {
+  background-color: #fff;
+  color: #065674;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loginButton:hover,
+.startButton:hover {
+  background-color: #f0f0f0;
+}
+
+/* =========================== Banner =========================== */
+
+/* banner.module.css */
+
+.main_banner_content {
+  margin-top: 250px;
+}
+
+.banner {
+  background-image: url("/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  margin: -40px;
+}
+
+.banner h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.exploreButton {
+  background-color: #065674;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.exploreButton:hover {
+  background-color: #053e53;
+}
