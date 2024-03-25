@@ -10,8 +10,7 @@ type NavLink = {
 const Navbar: React.FC = () => {
   const navLinks: NavLink[] = [
     { title: "Home", url: "/" },
-    { title: "About", url: "/about" },
-    { title: "Contact", url: "/contact" },
+    { title: "arno", url: "/arno" },
   ];
 
   return (

@@ -14,17 +14,17 @@ const HomePage = () => {
         <Row>
           <Card
             title="Sample Card 1"
-            topImage="/background_1.png"
+            topImage="/homePage_banner.png"
             text="This is a sample card description."
           />
           <Card
             title="Sample Card 2"
-            topImage="/background_1.png"
+            topImage="/homePage_banner.png"
             text="This is a sample card description."
           />
           <Card
             title="Sample Card 3"
-            topImage="/background_1.png"
+            topImage="/homePage_banner.png"
             text="This is a sample card description."
           />
         </Row>
