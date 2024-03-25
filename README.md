@@ -37,21 +37,21 @@ Here lies the commands for local development
 ### Git Commands
 
 Before any development starts, ensure that you have pulled the latest code from the git repositories
-- ( git pull )
+- [ git pull ]
 
 After changes, add your changes in preperation for git push
-- ( git add . )
+- [ git add . ]
 
 After the changes has been added, commit your changes
-- ( git commit -m "Place you message here" )
+- [ git commit -m "Place you message here" ]
 
 Push your changes to git hub
-- ( git push )
+- [ git push ]
 
 ## Git Stash
 
 Do you have changes but need to pull code? Stash your changes, pull your code and pop.
 
-- ( git stash )
-- ( git pull )
-- ( git stash pop )
+- [ git stash ]
+- [ git pull ]
+- [ git stash pop ]
