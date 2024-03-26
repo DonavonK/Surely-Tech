@@ -1,9 +1,12 @@
+
+
 import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
 import Link from "next/link";
 
 import { api } from "~/utils/api";
 import styles from "./index.module.css";
+import UnderConstruction from "~/components/underConstruction";
 
 export default function Home() {
   const hello = api.post.hello.useQuery({ text: "from tRPC" });
@@ -16,72 +19,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-
-
-{/* ===================================================== */}
-
-
-
-
-{/* Hello Arno, how are you? */}
-
-
-    
-{/* ===================================================== */}
-
-
-
-
-
-        <div className={styles.container}>
-          <h1 className={styles.title}>
-            Create <span className={styles.pinkSpan}>T3</span> App
-          </h1>
-          <div className={styles.cardRow}>
-            <Link
-              className={styles.card}
-
-              href="/homePage"
-              >
-
-
-              <h3 className={styles.cardTitle}>Donavon</h3>
-
-
-
-
-
-            </Link>
-        
-
-            <Link
-              className={styles.card}
-              href="/arno"
-              >
-
-
-              <h3 className={styles.cardTitle}>Arno →</h3>
-
-
-
-
-            </Link>
-
-
-          
-
-
-            {/* = ======================================================= */}
-
-
-          </div>
-          {/* <div className={styles.showcaseContainer}>
-            <p className={styles.showcaseText}>
-              {hello.data ? hello.data.greeting : "Loading tRPC query..."}
-            </p>
-            <AuthShowcase />
-          </div> */}
-        </div>
+   
+   
+<UnderConstruction imageUrl="/underConstruction.png"/>
+   
       </main>
     </>
   );

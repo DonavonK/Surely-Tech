@@ -1,3 +1,8 @@
+/* src/index.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 html,
 body {
   padding: 0;
@@ -15,6 +20,14 @@ a {
   box-sizing: border-box;
 }
 
-.h1 {
+h1 {
   font-size: 38px;
+  font-family: Inter;
+  color: #065674;
+}
+
+p {
+  font-size: 16 px;
+  font-family: Open Sans;
+  color: #FFFFFF;
 }

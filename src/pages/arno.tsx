@@ -28,7 +28,7 @@ export default function Arno() {
 
 
 
-        <div className={styles.container}>
+        <div className={styles.container_center}>
           <h1 className={styles.title}>arno</h1>
           <div className={styles.cardRow}></div>
         </div>

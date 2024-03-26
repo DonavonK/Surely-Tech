@@ -1,12 +1,16 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+/* src/index.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-/* =========================== Typography =========================== */
+/* =========================== Under Construction Banner =========================== */
 
-.h1 {
-  font-size: 38px;
+.underConstruction {
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
+
 
 .testDiv {
   background-color: red;
@@ -25,7 +29,10 @@
   min-height: 100vh;
   background-color: #ffffff;
 }
-.container {
+
+/* =========================== Containers =========================== */
+
+.container_center {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -33,7 +40,10 @@
   justify-content: center;
   gap: 3rem;
   padding: 4rem 1rem;
+  border: solid 1px red;
 }
+
+/* =========================== Mobile =========================== */
 
 @media (min-width: 640px) {
   .container {
@@ -151,11 +161,12 @@
 /* =========================== Card Container =========================== */
 
 .cardSection {
-  height: 450px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  padding: 0 300px 0 300px;
 }
 
 .cardContainer {
@@ -377,4 +388,54 @@
 
 .exploreButton:hover {
   background-color: #053e53;
+}
+
+/* =========================== CTA Banner =========================== */
+
+.cta_banner {
+  width: 100%;
+}
+
+.cta_banner_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.cta_banner_blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.cta_banner_left, .cta_banner_right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.cta_banner_left {
+  /* No need for text-align:left since it's empty */
+}
+
+.cta_banner_right {
+  text-align: right;
+}
+
+.cta_banner_right_image {
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: 1rem;
+}
+
+.cta_banner_h1 {
+  margin: 0;
+}
+
+.cta_banner p {
+  margin: 0;
 }
