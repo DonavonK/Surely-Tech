@@ -29,13 +29,11 @@ const HomePage = () => {
             text="This is a sample card description."
           />
         </Row>
-
-
       </section>
       <div className={styles.container_center}>
-<h1>Are you addicted to tech?</h1>
-</div>
-<></>
+        <h1>Are you addicted to tech?</h1>
+      </div>
+      <></>
     </>
   );
 };
