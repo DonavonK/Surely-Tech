@@ -25,10 +25,10 @@ const CTA_Banner: React.FC<CTA_BannerProps> = ({
           <div className={styles.cta_banner_left}>
             {/* Empty div to maintain layout */}
             <div>
-              <h1 className={styles.cta_banner_h1}>Surely-Tech</h1>
-              <div className="bg-blue-500 text-white p-4 mt-4">
-                This div has a blue background and white text with padding.
-              </div>
+              <h1 className={styles.h1_light}>Discover the world of Technology</h1>
+              <p className={styles.p_light}>
+              The Color can change, this section can be used to highlight certain areas. The purpose was to seperate the top from the bellow blog list
+              </p>
             </div>
           </div>
           <div className={styles.cta_banner_right}>
