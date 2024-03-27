@@ -30,6 +30,17 @@
   background-color: #ffffff;
 }
 
+.filterSection {
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  background-color: #ffffff;
+  margin: 15px 0 0 0 ;
+}
+
 /* =========================== Containers =========================== */
 
 .container_center {
@@ -549,3 +560,22 @@
   font-family: Inter;
   color: #065674;
 }
+
+/* =========================== Footer =========================== */
+
+.footer {
+    /* background-image: url("/banner.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-color: #001F2B;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin: 40px -0 0 0 ;
+    padding: 40px 0 0 0 ;
+    width: 100%;
+  }

@@ -6,6 +6,7 @@ import styles from "~/styles/styles.module.css";
 import Row from "~/components/row";
 import CTA_Banner from "~/components/cta_banner";
 import FilterBar from "~/components/filterBar";
+import Footer from "~/components/footer";
 
 const rightImage = "/cta_banner_image_.png";
 const backgroundColor = "#001F2B";
@@ -78,6 +79,7 @@ const HomePage = () => {
           />
         </Row>
       </section>
+      <Footer></Footer>
     </>
   );
 };

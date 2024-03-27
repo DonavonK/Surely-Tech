@@ -8,9 +8,9 @@ interface FilterBarProps {
 }
 
 const FilterBar: React.FC<FilterBarProps> = ({  }) => {
-  return   <section className={styles.section}>
+  return   <section className={styles.filterSection}>
 
-    <div style={{ borderRadius: "8px", display: "flex", width: "1050px", height: "120px" , backgroundColor: "#E8E8E8", alignItems: "center", justifyContent: "left", padding: "0 0 0 30px"}}>
+    {/* <div style={{ borderRadius: "8px", display: "flex", width: "1050px", height: "120px" , backgroundColor: "#E8E8E8", alignItems: "center", justifyContent: "left", padding: "0 0 0 30px"}}> */}
 
     <div style={{ display: "flex", gap: "1rem"}}>
 
@@ -21,7 +21,7 @@ const FilterBar: React.FC<FilterBarProps> = ({  }) => {
   <BasicFilter topImage={""} title={"Testing"} text={""}></BasicFilter>
     </div>
 
-    </div>
+    {/* </div> */}
 </section>
 };
 
