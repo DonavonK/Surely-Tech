@@ -24,7 +24,7 @@ export default function Arno() {
       <div className={styles.navbar}>
       </div>
         
-      <main className={styles.main}>
+      <main className={styles.section}>
 
 
 

@@ -3,11 +3,11 @@ import Card from "./card";
 import styles from "~/styles/styles.module.css";
 import Row from "./row";
 
-type BannerProps = {
+type Card_blockProps = {
   imageUrl: string;
 };
 
-const Banner: React.FC<BannerProps> = ({ imageUrl }) => {
+const Card_block: React.FC<Card_blockProps> = ({ imageUrl }) => {
   return (
     <div
       className={styles.banner}
@@ -24,4 +24,4 @@ const Banner: React.FC<BannerProps> = ({ imageUrl }) => {
   );
 };
 
-export default Banner;
+export default Card_block;
