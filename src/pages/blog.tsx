@@ -17,7 +17,6 @@ const BlogPage = () => {
     <>
       <Navbar />
       <SecondaryBanner imageUrl="secondayBanner.png" />
-
       <div style={{marginBottom: "40px"}} className={styles.section_left}>
         <h1 className={styles.h1_dark}>This is the title of a blog post</h1>
         <h4 className={styles.h4_dark}>New Lnie Heading</h4>
@@ -59,7 +58,7 @@ const BlogPage = () => {
           including versions of Lorem Ipsum.
         </p>
       </div>
-      <CTA_Banner backgroundColor={backgroundColor} rightImage={rightImage} />
+      {/* <CTA_Banner backgroundColor={backgroundColor} rightImage={rightImage} /> */}
 
       <Footer text={""}></Footer>
     </>

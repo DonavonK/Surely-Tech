@@ -15,22 +15,22 @@ const HomePage = () => {
   return (
     <>
       <Navbar />
-      <Banner imageUrl="homePage_banner.png" />
+      <Banner imageUrl="secondayBanner_4.jpg" />
       <section className={styles.cardSection}>
         <Row>
           <Card
             title="Sample Card 1"
-            topImage="/homePage_banner.png"
+            topImage="/secondayBanner.png"
             text="This is a sample card description."
           />
           <Card
             title="Sample Card 2"
-            topImage="/homePage_banner.png"
+            topImage="/secondayBanner_2.jpg"
             text="This is a sample card description."
           />
           <Card
             title="Sample Card 3"
-            topImage="/homePage_banner.png"
+            topImage="/secondayBanner_3.jpg"
             text="This is a sample card description."
           />
         </Row>

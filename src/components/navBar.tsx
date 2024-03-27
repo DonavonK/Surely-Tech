@@ -12,6 +12,7 @@ const Navbar: React.FC = () => {
     { title: "homePage", url: "/" },
     { title: "arno", url: "/arno" },
     { title: "blog", url: "/blog" },
+    { title: "faq", url: "/faq" },
   ];
 
   return (

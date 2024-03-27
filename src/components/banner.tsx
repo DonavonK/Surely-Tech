@@ -13,8 +13,8 @@ const Banner: React.FC<BannerProps> = ({ imageUrl }) => {
       className={styles.banner}
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
-      <div className={styles.main_banner_content}>
-        <div className={styles.logoContainer}>
+    <div className={styles.main_banner_content}>
+        <div style={{marginTop: "-130px"}} className={styles.logoContainer}>
           <img src="/logo.png" alt="Logo" className={styles.logo_home} />
         </div>
         <h1 className={styles.h1_light}>Surely-Tech</h1>
