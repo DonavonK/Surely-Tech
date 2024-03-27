@@ -20,8 +20,13 @@ export default function Home() {
       </Head>
       <section className={styles.section}>
    
+
+
    
+
+
 <UnderConstruction imageUrl="/underConstruction.png"/>
+
    
       </section>
     </>
