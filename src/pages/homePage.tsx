@@ -38,7 +38,6 @@ const HomePage = () => {
       <div className={styles.container_center}>
         <h1 className={styles.h1_dark}>Are you addicted to tech?</h1>
       </div>
-      <></>
       <CTA_Banner backgroundColor={backgroundColor} rightImage={rightImage} />
       <FilterBar text={""}/>
       <section className={styles.section}>

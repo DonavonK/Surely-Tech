@@ -11,7 +11,7 @@ const UnderConstruction: React.FC<UnderConstructionProps> = ({ imageUrl }) => {
   return (
     <div
       className={styles.underConstruction}
-      style={{ backgroundImage: `url(${imageUrl})` }}
+      // style={{ backgroundImage: `url(${imageUrl})` }}
     >
     </div>
   );

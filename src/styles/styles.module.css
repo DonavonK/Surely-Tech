@@ -7,9 +7,16 @@
 
 .underConstruction {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/underConstruction.png') no-repeat center center/cover; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 
 .testDiv {
@@ -28,6 +35,19 @@
   justify-content: center;
   min-height: 300px;
   background-color: #ffffff;
+  padding: 0 400px 0 400px;
+}
+
+.section_left {
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  min-height: 300px;
+  background-color: #ffffff;
+  /* margin-left: 400px; */
+  padding: 0 400px 0 400px;
 }
 
 .filterSection {
@@ -392,6 +412,20 @@
   background-size: cover;
   background-position: center;
   height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  margin: -40px;
+}
+
+.secondaryBanner {
+  background-image: url("/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;

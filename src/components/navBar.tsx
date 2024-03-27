@@ -9,8 +9,9 @@ type NavLink = {
 
 const Navbar: React.FC = () => {
   const navLinks: NavLink[] = [
-    { title: "Home", url: "/" },
+    { title: "homePage", url: "/" },
     { title: "arno", url: "/arno" },
+    { title: "blog", url: "/blog" },
   ];
 
   return (
