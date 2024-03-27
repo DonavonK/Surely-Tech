@@ -9,7 +9,7 @@ import FilterBar from "~/components/filterBar";
 import Footer from "~/components/footer";
 
 const rightImage = "/cta_banner_image_.png";
-const backgroundColor = "#001F2B";
+const backgroundColor = "#257C9D";
 
 const HomePage = () => {
   return (

@@ -15,9 +15,12 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>
-        <img src="/logo.png" alt="Logo" width="30" height="30" />
-      </div>
+      <Link href={"/"}>
+        <div className={styles.logo}>
+          <img src="/logo.png" alt="Logo" width="50" height="50" />
+        </div>
+      </Link>
+
       <ul className={styles.navList}>
         {navLinks.map((link, index) => (
           <li key={index} className={styles.navItem}>
