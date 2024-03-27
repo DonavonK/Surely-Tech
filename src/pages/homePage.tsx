@@ -40,7 +40,7 @@ const HomePage = () => {
       </div>
       <></>
       <CTA_Banner backgroundColor={backgroundColor} rightImage={rightImage} />
-      <FilterBar/>
+      <FilterBar text={""}/>
       <section className={styles.section}>
         <Row>
           <Card
@@ -79,7 +79,7 @@ const HomePage = () => {
           />
         </Row>
       </section>
-      <Footer></Footer>
+      <Footer text={""}></Footer>
     </>
   );
 };
