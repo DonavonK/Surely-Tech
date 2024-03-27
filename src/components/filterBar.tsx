@@ -14,7 +14,7 @@ const FilterBar: React.FC<FilterBarProps> = ({  }) => {
 
     <div style={{ display: "flex", gap: "1rem"}}>
 
-  <BasicFilter topImage={""} title={"Testing"} text={""}></BasicFilter>
+  <BasicFilter topImage={""} title={"Testing"} text={"Text"}></BasicFilter>
   <BasicFilter topImage={""} title={"Testing"} text={""}></BasicFilter>
   <BasicFilter topImage={""} title={"Testing"} text={""}></BasicFilter>
   <BasicFilter topImage={""} title={"Testing"} text={""}></BasicFilter>
@@ -22,7 +22,7 @@ const FilterBar: React.FC<FilterBarProps> = ({  }) => {
     </div>
 
     {/* </div> */}
-</section>
+</section> 
 };
 
 export default FilterBar;
