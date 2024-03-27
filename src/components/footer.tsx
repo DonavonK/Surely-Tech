@@ -4,9 +4,10 @@ import styles from "~/styles/styles.module.css";
 import Row from "./row";
 
 type FooterProps = {
+    text: string;
 };
 
-const Footer: React.FC<FooterProps> = ({  }) => {
+const Footer: React.FC<FooterProps> = ({ text }) => {
   return (
     <div
       className={styles.footer}
